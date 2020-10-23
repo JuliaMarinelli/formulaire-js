@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    margin: auto;
+    max-width: 450px;   
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.error {
+    margin-top: 0; 
+    color : red;    
+}
+
+#submitButton {
+    background:  #24cb96 ;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}

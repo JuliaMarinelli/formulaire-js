@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Formulaire</title>
 </head>
 <body>
+    <h1 class="header">Formulaire</h1>
     <form action="reponse.html" method="get" id="formId">
-        <div>
+        <div class="input-field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" class="validate">
+            <p id="nameError" class="error"> name is required </p>
         </div>
-        <div>
+        <div class="input-field">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" class="validate">
+            <p id="emailError" class="error"> email is required </p>
         </div>
-        <div>
+        <div class="input-field">
+            <input type="password" name="password" id="password" class="validate">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-        </div>
-        <input type="submit" value="submit" id="submitButton">
+            <p id="passwordError" class="error"> password is required </p>
+        </div>  
+        <input class="bnt" type="submit" value="submit" id="submitButton">
     </form>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
