@@ -11,7 +11,7 @@ window.onload = function(){
     passwordIsFill = password.value.toString().length !== 0
     nameIsFill = name.value.toString().length !== 0
     emailIsFill = email.value.toString().length !== 0
-    submit.disabled = !passwordIsFill || !nameIsFill || !emailIsFill
+    submitUpdate();
 }
 
 password.addEventListener('keyup', (e)=>{
