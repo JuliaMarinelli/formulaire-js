@@ -2,6 +2,7 @@ const submit = document.getElementById("submitButton")
 const password = document.getElementById("password")
 const name = document.getElementById("name")
 const email = document.getElementById("email")
+const form = document.getElementById('formId')
 
 let passwordIsFill;
 let nameIsFill;
@@ -30,3 +31,10 @@ email.addEventListener('keyup', (e)=>{
 submitUpdate = function() {
     submit.disabled = !passwordIsFill || !nameIsFill || !emailIsFill
 }
+
+form.addEventListener("submit", function (e) {
+    if(!passwordIsFill || !nameIsFill || !emailIsFill) {
+        alert("NOOOOON !")
+        e.preventDefault()
+    }
+})
