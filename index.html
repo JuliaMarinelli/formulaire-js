@@ -7,10 +7,21 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <input type="text" name="name" id="name">
-    <input type="email" name="email" id="email">
-    <input type="password" name="password" id="password">
-    <input type="submit" value="submit" id="submitButton">
+    <form action="/reponse.html" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <input type="submit" value="submit" id="submitButton">
+    </form>
     <script src="js/main.js"></script>
 </body>
 </html>
